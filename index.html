@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jaibana Art Workshop - Artista visual, pintor y dibujante especializado en realismo y tradiciones artísticas clásicas y barrocas.">
+    <title>Jaibana Art Workshop - Galería de Arte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Jaibana<span>Art</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Jaibana Art Workshop</h1>
+            <p>Realismo. Tradición. Pasión.</p>
+            <p class="hero-subtitle">Obras de arte acrílico elaboradas con detalle, emoción y maestría artística.</p>
+            <a href="#gallery" class="btn btn-primary">Ver Galería</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Desplázate para explorar</span>
+            <div class="scroll-icon">↓</div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Obras Disponibles</h2>
+
+            <!-- Filtros -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="grande">Grande</button>
+                <button class="filter-btn" data-filter="mediano">Mediano</button>
+                <button class="filter-btn" data-filter="pequeño">Pequeño</button>
+            </div>
+
+            <!-- Grid de obras -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Las obras se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL PARA VER DETALLES -->
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Obra de arte">
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalTechnique"></p>
+                    <p id="modalSize"></p>
+                    <p id="modalYear"></p>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <a href="#contact" class="btn btn-secondary">Solicitar información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Sobre mi</h2>
+                    <p>Soy artista visual, pintor y dibujante de Santa Fe de Antioquia, Colombia. Mi trabajo está
+                        enraizado en el desarrollo experiencial de reflexiones sociales y espirituales a través de la
+                        pintura y el dibujo.</p>
+                    <p>Mis obras se inspiran en el realismo, tomando las tradiciones artísticas clásicas y barrocas como
+                        influencias primarias. Fomento el diálogo y el cuestionamiento alrededor de aspectos cotidianos
+                        del panorama social, replanteando el significado de nuestras raíces étnicas que moldean nuestra
+                        identidad geográfica e histórica.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <h4>Técnica</h4>
+                            <p>Acrílico sobre lienzo</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>Estilo</h4>
+                            <p>Realismo clásico y barroco</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>Especialidad</h4>
+                            <p>Retratos y obras decorativas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RETRATOS PERSONALIZADOS -->
+    <section class="portraits">
+        <div class="container">
+            <h2 class="section-title">Retratos Personalizados</h2>
+            <p class="portraits-intro">Estás a un paso de poseer un retrato pintado a mano con acrílico, elaborado con
+                cuidado, emoción y atención al detalle para preservar tus recuerdos más preciados.</p>
+
+            <div class="portraits-grid">
+                <div class="portrait-card">
+                    <h3>Proceso de Encargo</h3>
+                    <ol>
+                        <li>Envía tu nombre completo</li>
+                        <li>Proporciona una foto de referencia</li>
+                        <li>Elige el tamaño deseado</li>
+                        <li>Recibe una cotización personalizada</li>
+                    </ol>
+                </div>
+                <div class="portrait-card">
+                    <h3>Tamaños Disponibles</h3>
+                    <ul>
+                        <li><strong>Pequeño:</strong> 40 x 60 cm</li>
+                        <li><strong>Mediano:</strong> 80 x 60 cm</li>
+                        <li><strong>Grande:</strong> 100 x 122 cm</li>
+                        <li><strong>Personalizado:</strong> Medidas a tu gusto</li>
+                    </ul>
+                </div>
+                <div class="portrait-card">
+                    <h3>Opciones de Pago</h3>
+                    <ul>
+                        <li>✓ PayPal</li>
+                        <li>✓ Transferencia bancaria</li>
+                        <li>✓ Acuerdo personalizado</li>
+                    </ul>
+                    <p class="small-text">Envío internacional disponible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="contact-intro">¿Interesado en una obra? ¿Tienes preguntas? Me encantaría saber de ti.</p>
+
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <h3>WhatsApp</h3>
+                    <p>Respuesta rápida</p>
+                    <a href="https://wa.me/573197662048" target="_blank" class="btn btn-primary">
+                        +57 319 766 2048
+                    </a>
+                </div>
+                <div class="contact-method">
+                    <h3>Instagram</h3>
+                    <p>Mira mis trabajos más recientes</p>
+                    <a href="https://www.instagram.com/jaibanart_workshop/" target="_blank" class="btn btn-primary">
+                        @jaibanart_workshop
+                    </a>
+                </div>
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p>Consultas formales</p>
+                    <a href="mailto:jaibanartworkshop@gmail.com" class="btn btn-primary">
+                        jaibanartworkshop@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jaibana Art Workshop. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/jaibanart_workshop/" target="_blank" title="Instagram">Instagram</a>
+                <a href="https://www.facebook.com/jose.m.londonomorales" target="_blank" title="Facebook">Facebook</a>
+                <a href="https://wa.me/573197662048" target="_blank" title="WhatsApp">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
